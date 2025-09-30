@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Weather Widget</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <h1 class="title">☁️ Weather ☁️</h1>
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Search city..." />
+      <button id="search-btn">🔍</button>
+    </div>
+    <div class="unit-toggle">
+      <button id="toggle-unit">Switch to °F</button>
+    </div>
+    <div class="weather-widget">
+      <div class="location">Loading...</div>
+      <div class="temp">-- °C</div>
+      <div class="desc">---</div>
+      <div class="extra">
+        <p>💧 Humidity: <span id="humidity">--</span>%</p>
+        <p>💨 Wind: <span id="wind">--</span> km/h</p>
+      </div>
+    </div>
+    <div class="forecast">
+      <h2 class="forecast-title">Next 3 Days</h2>
+      <div class="forecast-cards" id="forecast-cards"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
